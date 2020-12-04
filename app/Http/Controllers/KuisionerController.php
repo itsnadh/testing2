@@ -26,7 +26,7 @@ class KuisionerController extends Controller
         $subkarakteristik->ps_nilai             = $request->ps_nilai;
         $subkarakteristik->jumlah_responden     = $request->jumlah_responden;
         $subkarakteristik->bobot_absolut        = $subkarakteristik->karakteristik->k_bobot * $subkarakteristik->bobot_relatif;
-        $subkarakteristik->nilai_subfaktor      = $subkarakteristik->ps_nilai / $subkarakteristik->jumlah_responden;
+        $subkarakteristik->nilai_subfaktor      = $subkarakteristik->ps_nilai / $subkarakteristik->jumlah_responden*25;
         $subkarakteristik->nilai_absolut        = $subkarakteristik->bobot_absolut * $subkarakteristik->nilai_subfaktor;
         
 

@@ -91,10 +91,14 @@
                       </a>
                     </td>   
                     @endif
+                    
                 </tr>
                 @endforeach
               </tbody>
             </table>
+            <p style="color:blue" align="right">
+              <button class="btn" type="submit">SUBMIT</button>
+              </p>
           </div>
         </div>
       </div>
