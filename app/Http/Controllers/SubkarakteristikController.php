@@ -34,7 +34,7 @@ class SubkarakteristikController extends Controller
 
         $url = $ip;
         $temp = 0;
-        for($i=0;$i<5;$i++){
+        for($i=0;$i<30;$i++){
             $ch = curl_init($url);
             curl_setopt($ch, CURLOPT_TIMEOUT, 5);
             curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
@@ -53,7 +53,7 @@ class SubkarakteristikController extends Controller
             }
             
         }
-
+        
         if ($temp > 0 && $temp <= 20){
             $hasil = 1;    
         } 
